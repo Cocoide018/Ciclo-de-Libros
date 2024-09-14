@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="es-AR">
+
+<head>
+  <title>COMPRA y VENTA de libros</title>
+  <link rel="icon" href="https://images.vexels.com/content/205462/preview/pile-of-books-illustration-b5a415.png"
+
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="oEddPMMfoktPtqvaWrurn76AFL7N3EKzXBcJW09pTV0" />
+  <meta name="category" content="Librería Ciclo de libros, venta libros, compro libros, libros usados, libros viejos, libros antiguos y modernos, libros de segunda mano"/>
+  <meta name="identifier-url" content="https://compras.libreriathesauros.com"/>
+  <meta name="description" content="Compramos libros - Librería Ciclo de libros: libros usados, viejos, antiguos, modernos, de segunda mano"/> 
+  <meta name="keywords" content="compra de libros, libros usados, libros viejos, libros antiguos, la salle florida"/>
+  <meta name="author" content="czarabozo@lasalleflorida.edu.ar"/>
+
+  <meta name="document-classification" content="Librería Ciclo de libros, compramos libros, compro libros, libros usados, libros viejos, libros antiguos y modernos, libros de segunda mano, bibliotecas"/>
+
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <style type="text/css">
+    #loader {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      color: #ffffff;
+      background: rgba(0,0,0,0.75) url(/static/img/spinner.svg) no-repeat center center;
+      z-index: 10000;
+    }
+  </style>
+
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+
+
+<body class="animated fadeIn">
+
+  <nav class="navbar is-fixed-top is-black">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#hero-top">
+          <img src="static/img/logo ciclo de libros.png" alt="Logo Ciclo de Libros">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div class="navbar-menu is-size-7 is-uppercase has-text-weight-semibold">
+        <div class="navbar-end">
+            <a class="navbar-item sans-serif" href="#vender-libros">
+            Cómo vender
+          </a>
+          <a class="navbar-item sans-serif" href="#preguntas-frecuentes">
+            Qué libros aceptamos
+          </a>
+          <a class="navbar-item sans-serif" href="#nuestra-libreria">
+            Nuestra librería
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <span class="goto is-hidden" id="hero-top"> &nbsp; </span>
+
+  
+  <section class="hero is-fullheight is-bold parallax is-hidden-touch">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-0 has-text-white is-uppercase has-text-weight-heavy">
+          Compramos libros
+        </h1>
+        
+        <a href="#vender-libros" title="Vender mis libros" class="button is-black is-inverted is-outlined is-large">
+            Vender mis libros
+        </a>
+      </div>
+     </div>
+     <span class="goto" id="preguntas-frecuentes"> &nbsp; </span>
+  </section>
+
+ 
+  <section class="hero is-medium is-bold parallax is-hidden-desktop">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2 has-text-heavy has-text-white is-uppercase has-text-weight-heavy">
+          Compramos<br>libros
+        </h1>
+      
+        <a href="#vender-libros" title="Vender mis libros" class="button is-black is-inverted is-outlined">Vender mis libros</a>
+      </div>
+    </div>
+    <div id="preguntas-frecuentes"></div>
+  </section>
+
+  
+  <section class="section">
+    <div class="container">
+        <h1 class="title is-size-4-touch has-text-centered is-uppercase">Qué libros aceptamos</h1>
+        <div class="columns">
+            <div class="column has-text-centered">
+                <div class="is-flex is-horizontal-center has-margin-top-bottom">
+                    <figure class="image is-128x128">
+                        <img src="static/img/libro_abierto.png" alt="Libro abierto">
+                    </figure>
+                </div>
+                <h2 class="title is-4 is-size-5-touch has-text-weight-light is-uppercase">De que materias aceptamos</h2>
+                <p class="is-size-5-desktop">Literatura, filosofía, ciencias sociales, arte, ciencias naturales, técnicos, religión, etc. </p>
+            </div>
+            <div class="column has-text-centered">
+                <div class="is-flex is-horizontal-center has-margin-top-bottom">
+                    <figure class="image is-128x128">
+                        <img src="static/img/pila_libros.png" alt="Pila de libros">
+                    </figure>
+                </div>
+                <h2 class="title is-4 is-size-5-touch has-text-weight-light is-uppercase">Tipos de libros</h2>
+                <p class="is-size-5-desktop">No importa la cantidad de libros que quiera vender, ya sean unos pocos ejemplares, una colección.</p>
+            </div>
+            <div class="column has-text-centered">
+                <div class="is-flex is-horizontal-center has-margin-top-bottom">
+                    <figure class="image is-128x128">
+                        <img src="static/img/guardapolvo j.jpg" alt="Multilenguaje">
+                    </figure>
+                </div>
+                <h2 class="title is-4 is-size-5-touch has-text-weight-light is-uppercase">Para todos los divisiones</h2>
+                <p class="is-size-5-desktop">Jardin de infantes, nivel primario y secundario.</p>
+            </div>
+        </div>
+      <div class="column has-text-centered is-full has-margin-top-bottom">
+        <div class="is-flex is-horizontal-center">
+          <article class="message is-danger">
+            <div class="message-body">
+              <p class="title is-4 is-size-5-touch has-text-danger has-text-weight-light is-uppercase">No aceptamos</p>
+              <ul class="no is-size-5-desktop">
+                <li>Ejemplares rotos, manchados, con sellos de biblioteca y/o húmedos.</li>
+                <li>revistas de actualidad o deportivas, diarios.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+  </section>
+
+    <span class="goto" id="vender-libros"> &nbsp; </span>
+
+ 
+
+  <section class="section has-background">
+    <div class="container">
+        <h2 class="title is-size-4-touch has-text-centered is-uppercase">Cómo vender</h2>
+        <div class="content">
+        <p class="has-text-centered is-size-5-desktop">
+            Envíenos un <em>whatsapp</em>.
+          <br>
+            <span class="has-text-centered">El mensaje debe incluir <strong>nombre</strong>, <strong>zona de residencia</strong> y algunas <strong><a href="#my-modal" title="Ver ejemplo" class="open-modal" data-modal-id="#my-modal">fotos de los libros <span class="icon"><i class="fa fa-picture-o"></i></span></strong></a>
+        </p>
+        <p class="has-text-centered is-size-6-desktop is-uppercase has-text-weight-semibold">
+          Si además desea vender objetos decorativos, arte, mobiliario u otro tipo de antigüedades, consúltenos.
+        </p>
+        <p class="has-text-centered is-hidden-touch">
+          <a class="button is-large is-link" target="_blank" href="https://web.whatsapp.com/send?phone=541127017466">
+            <span class="icon is-medium"> 
+              <i class="fa fa-whatsapp"></i>
+            </span>
+            <span>11 2701 7466</span>
+          </a>
+        </p>
+        <p class="has-text-centered is-hidden-desktop">
+                    <a class="button is-large is-link" target="_blank" href="whatsapp://send?phone=541127017466">
+                        <span class="icon is-medium"> 
+                        <i class="fa fa-whatsapp"></i>
+                      </span>
+                      <span>11 2701 7466</span>
+                    </a>
+                </p>
+            </div>
+
+
+          </div>
+      </div>
+    </div>
+    </section>
+
+  <div id="loader"></div>
+
+
+  <div aria-hidden="" class="modal" id="my-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content" id="modal-content-ejemplo">
+      <figure class="image is-4by3">
+        <img src="/static/img/IMG_20180925_155408.jpg" alt="Foto de libros: ejemplo">
+      </figure>
+      <div class="box">
+        <p>Debe poder leerse con claridad el título y/o el autor en los lomos de los libros.</p>
+      </div>
+     </div>
+     <button aria-label="close" class="modal-close" data-modal-id="#my-modal"></button>
+  </div>
+
+  <span class="goto" id="nuestra-libreria"> &nbsp; </span>
+
+  <section class="section has-margin-bottom">
+    <div class="container has-text-centered">
+        <h2 class="title is-size-4-touch is-uppercase">Nuestra librería</h2>
+        <div class="content">
+        <p class="is-size-5-desktop">
+          Somos una librería establecida en el Instituto La Salle Florida, inagurada en 2024.
+          <br>Nos especializamos en libros escolares de segunda mano, antiguos y modernos.
+            <br>Estamos ubicados en <a href="https://maps.app.goo.gl/pfcGzZYqGosbRLXC8" target="_blank" title="Ver mapa">Pres. Hipólito Yrigoyen 2599 <span class="icon"><i class="fa fa-external-link"></i></span></a>, a pocos metros de la entrada principal.
+        </p>
+        <figure class="image">
+          <img src="/static/img/nuestra_libreria.jpg" alt="Nuestra librería">
+        </figure>
+      </div>
+    </div>
+    </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered has-text-white is-family-secondary">
+        <p class="is-size-7-touch">
+          <a href="" target="_blank">
+            <img src="/static/img/DATAWEB.jpg" alt="Monotributo" width="36">
+          </a>
+          <br>Pres. Hipólito Yrigoyen 2599  Florida, Provincia de Buenos Aires
+          <br><a href="mailto:czarabozo@lasalleflorida.edu.ar">czarabozo@lasalleflorida.edu.ar</a>
+        </p>
+        
+
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var spinner = $('#loader');
+    $(function() {
+      $('#MensajeForm').submit(function(e) {
+        spinner.show();
+      });
+    });
+  </script>
+
+    <script>
+        function toggleModalClasses(event) {
+            var modalId = event.currentTarget.dataset.modalId;
+            var modal = $(modalId);
+            modal.toggleClass('is-active animated fadeIn');
+           
+          };
+        $('.open-modal').click(toggleModalClasses);
+        $('.modal-close').click(toggleModalClasses);
+    </script>
+
+  <script>
+   
+    var select_zona = document.getElementById('zona');
+    select_zona.firstChild.disabled= true;
+    
+    var select_cantidad = document.getElementById('cantidad');
+    select_cantidad.firstChild.disabled = true;
+  </script>
+
+  <script src="/static/js/navbar.js"></script>
+  <script src="/static/js/mostrar_adjuntos.js"></script>
+  <script src="/static/js/scroll.js"></script>
+
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17141220-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-17141220-3');
+  </script>
+
+</body>
+</html>
